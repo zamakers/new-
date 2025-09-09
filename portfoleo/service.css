@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+}
+
+.services {
+  text-align: center;
+  padding: 40px;
+}
+
+.services h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.service-card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.service-card h3 {
+  margin: 0 0 10px;
+  color: #7a38cc;
+}
+
+.service-card p {
+  margin: 5px 0 15px;
+  color: #444;
+}
+
+.toggle-btn {
+  background: linear-gradient(90deg, #a259ff, #f72585);
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #7a38cc;
+}
+
+.extra-text {
+  display: none;
+  margin-top: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.extra-text {
+  display: none;
+  margin-top: 10px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+}

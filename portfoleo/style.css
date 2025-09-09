@@ -1,0 +1,773 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  /* ✅ navbar full width */
+  box-sizing: border-box;
+  /* border bhi width me count hoga */
+}
+
+
+.pot {
+  width: 110px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: 4rem;
+  margin-top: 15px;
+
+}
+
+
+.acher {
+  display: flex;
+  margin-right: 10rem;
+  justify-content: space-between;
+  width: 60rem;
+  margin-left: 90px;
+
+}
+
+.acher a {
+  color: black;
+  font-size: 18px;
+}
+
+.acher a:hover {
+  color: red;
+  font-weight: bold;
+}
+
+/* button */
+.btn-box {
+  margin-left: auto;
+  /* ye button ko extreme right push karega */
+  margin-right: 5rem;
+  /* thoda gap right border se */
+}
+
+button {
+  background: linear-gradient(90deg, #a259ff, #f72585);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* sale */
+.intro {
+  background: linear-gradient(135deg, #fdf2f8, #e0c3fc, #8ec5fc);
+  font-family: 'Poppins', sans-serif;
+  height: 30rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  /* ✅ Flexbox */
+  align-items: center;
+  /* ✅ Vertical center */
+  justify-content: space-between;
+  /* ✅ Space between text & image */
+  padding: 0 70px;
+}
+
+/* Text Section */
+.intro-text {
+  max-width: 55%;
+}
+
+.intro h2 {
+  font-size: 28px;
+  color: #333;
+  padding-top: 20px;
+}
+
+.intro h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #111;
+}
+
+.intro h4 {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cv-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  background: #a259ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  background: #7a38cc;
+}
+
+/* Image Section */
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* more */
+.more {
+  height: 30rem;
+  width: 100%;
+  max-width: 1200px;
+  /* center limit */
+  margin: 0 auto;
+  /* parent center align */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* equal spacing */
+}
+
+
+.m1 {
+  height: 25rem;
+  width: 20rem;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.m1 h1 {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  /* ⬅️ default margin ko chhota kar diya */
+  font-size: 50px;
+
+}
+
+.m1 h2 {
+  margin-left: 20px;
+  margin-top: 0px;
+  /* ⬅️ extra top margin hata do */
+  font-size: 40px;
+  color: #7f43c9;
+}
+
+.m1 p {
+  margin-left: 20px;
+  font-size: 20px;
+
+}
+
+.m1 button {
+  height: 50px;
+  width: 100px;
+  background-color: #a259ff;
+  margin-left: 20px;
+
+}
+
+/* start m2 */
+.m2 {
+  height: 25rem;
+  width: 20rem;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.m2 button {
+  height: 40px;
+  width: 110px;
+  background-color: #a259ff;
+  margin-left: 30px;
+  margin-top: 40px;
+
+}
+
+.m2 h3 {
+  margin-left: 30px;
+  font-size: 20px;
+  color: #a259ff;
+  font-weight: bold;
+}
+
+.m2 h1 {
+  margin-left: 30px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-top: -10px;
+  /* h1 ko upar le jane ke liye */
+}
+
+.m2 p {
+  margin-left: 30px;
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 0;
+  /* 👈 paragraph ka neeche ka gap hat gaya */
+}
+
+.m2 .company {
+  color: black;
+}
+
+.b1 {
+  display: block;
+  margin-top: 0;
+  /* 👈 ab button bilkul neeche chipka hoga */
+  margin-left: 30px;
+  padding: 8px 16px;
+  background-color: #a259ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* start m */
+.m3 {
+  height: 25rem;
+  width: 20rem;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.m3 button {
+  height: 40px;
+  width: 110px;
+  background-color: #a259ff;
+  margin-left: 30px;
+  margin-top: 40px;
+
+}
+
+.m3 h3 {
+  margin-left: 30px;
+  font-size: 20px;
+  color: #a259ff;
+  font-weight: bold;
+}
+
+.m3 h1 {
+  margin-left: 30px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-top: -10px;
+  /* h1 ko upar le jane ke liye */
+}
+
+.m3 p {
+  margin-left: 30px;
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 0;
+  /* 👈 paragraph ka neeche ka gap hat gaya */
+}
+
+.m3 .company {
+  color: black;
+}
+
+.b1 {
+  display: block;
+  margin-top: 0;
+  /* 👈 ab button bilkul neeche chipka hoga */
+  margin-left: 30px;
+  padding: 8px 16px;
+  background-color: #a259ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.firat {
+  margin-left: 40px;
+  color: #7a38cc;
+  font-size: 40px;
+  text-decoration: underline;
+  background-color: lightgray;
+  height: 60px;
+  width: 11rem;
+}
+
+.extra-text {
+  margin-left: 30px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+
+/* pictures */
+.team {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  /* halka grey background */
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns fixed */
+  gap: 2rem;
+  /* gap between cards */
+  justify-items: center;
+}
+
+.card {
+  background-color: #ffffff;
+  /* ab red nahi white hoga */
+  border-radius: 15px;
+  padding: 2rem;
+  width: 250px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.social {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  /* center me laya do */
+  gap: 15px;
+  /* dono ke beech space */
+}
+
+.social img {
+  width: 50px;
+  /* yahan size bara karo */
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  /* hover effect */
+}
+
+.social img:hover {
+  transform: scale(1.1);
+  /* hover par thoda zoom */
+}
+
+/* project */
+.projects {
+  padding: 3rem 2rem;
+  background-color: #f0f0f5;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 280px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: linear-gradient(90deg, #a259ff, #f72585);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #7a38cc;
+}
+
+/* Skills */
+.skills {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.skills-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.bar {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 12px;
+  background: linear-gradient(90deg, #a259ff, #f72585);
+  border-radius: 20px;
+}
+
+/* Services */
+.services {
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card i {
+  font-size: 2rem;
+  color: #a259ff;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Contact */
+.contact {
+  padding: 3rem 2rem;
+  background: #f0f0f5;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact button {
+  background: linear-gradient(90deg, #a259ff, #f72585);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact button:hover {
+  background: #7a38cc;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.footer-social {
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #f72585;
+}
+
+.service-card img {
+  width: 60px;
+  margin-bottom: 15px;
+
+  /* Dark Mode */
+  .dark-mode {
+    background: #111;
+    color: #fff;
+  }
+
+  .dark-mode .navbar {
+    background: #222;
+  }
+
+  .dark-mode .service-card,
+  .dark-mode .project-card,
+  .dark-mode .card {
+    background: #1e1e1e;
+    color: #ddd;
+  }
+
+  .dark-mode footer {
+    background: #000;
+  }
+}
+
+/* about */
+/* About Page Text Section */
+.about-text {
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: #fdf2f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #7a38cc;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about-text .highlight {
+  color: #f72585;
+  font-weight: bold;
+}
+
+/* Resume */
+/* Resume Page Text Section */
+.resume-text {
+  max-width: 900px;
+  margin: 5rem auto;
+  padding: 2.5rem;
+  background: #e0c3fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.resume-text h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #a259ff;
+}
+
+.resume-text h2 {
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #f72585;
+}
+
+.resume-text p,
+.resume-text li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+.resume-text ul {
+  margin-left: 1.5rem;
+  list-style: square;
+}
+
+.resume-text .highlight {
+  color: #7a38cc;
+  font-weight: bold;
+}
+
+/* service */
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .acher {
+    width: auto;
+    margin-right: 2rem;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+  .intro-text {
+    max-width: 100%;
+  }
+  .intro-img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  .acher {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .btn-box {
+    margin: 10px 0;
+  }
+  .more {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .team-container {
+    grid-template-columns: 1fr;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 32px;
+  }
+  .intro h2 {
+    font-size: 20px;
+  }
+  .intro h4 {
+    font-size: 14px;
+  }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+  .m1, .m2, .m3 {
+    width: 100%;
+  }
+}

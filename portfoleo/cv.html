@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zain Ali — CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f1220;
+            /* page background */
+            --card: #12172b;
+            /* card background */
+            --muted: #a7b2c8;
+            /* light text */
+            --text: #e8ecf5;
+            /* main text */
+            --accent: #6c63ff;
+            /* primary accent */
+            --accent-2: #22d3ee;
+            /* secondary accent */
+            --chip: #212946;
+            /* chip background */
+            --good: #10b981;
+            /* success green */
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            margin: 0
+        }
+
+        body {
+            font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial;
+            background: radial-gradient(1200px 600px at 10% -10%, rgba(108, 99, 255, .25), transparent 60%),
+                radial-gradient(800px 400px at 120% 10%, rgba(34, 211, 238, .20), transparent 60%),
+                var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 24px;
+        }
+
+        /* Header */
+        .hero {
+            grid-column: 1/-1;
+            background: linear-gradient(135deg, rgba(108, 99, 255, .25), rgba(34, 211, 238, .20));
+            border: 1px solid rgba(255, 255, 255, .08);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+            backdrop-filter: blur(6px);
+            border-radius: 24px;
+            padding: 28px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        /* ✅ Attractive Logo */
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 20px;
+            flex: 0 0 96px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 32px;
+            font-family: "Poppins", sans-serif;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, .35);
+        }
+
+        .logo-text {
+            background: linear-gradient(135deg, #fff, #e0e0e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            /* smooth rendering */
+            text-decoration: none;
+            /* force remove underline */
+        }
+
+        .headline h1 {
+            margin: 0 0 6px;
+            font-size: 30px;
+            letter-spacing: .3px
+        }
+
+        .headline p {
+            margin: 0;
+            color: var(--muted)
+        }
+
+        /* Side column */
+        .card {
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, .06);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .25)
+        }
+
+        .card+.card {
+            margin-top: 18px
+        }
+
+        h2 {
+            margin: 0 0 12px;
+            font-size: 18px;
+            letter-spacing: .4px
+        }
+
+        .line {
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+            border-radius: 2px;
+            margin: 10px 0 16px
+        }
+
+        .contact a {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: var(--text);
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, .06);
+            background: #0c1223
+        }
+
+        .contact a:hover {
+            border-color: rgba(108, 99, 255, .6)
+        }
+
+        .contact a+a {
+            margin-top: 10px
+        }
+
+        .chip {
+            display: inline-block;
+            background: var(--chip);
+            padding: 8px 12px;
+            border-radius: 999px;
+            margin: 6px 6px 0 0;
+            border: 1px solid rgba(255, 255, 255, .05)
+        }
+
+        .meter {
+            height: 10px;
+            background: #0b1020;
+            border-radius: 999px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, .06)
+        }
+
+        .meter>span {
+            display: block;
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            width: 70%
+        }
+
+        /* Main column */
+        .section {
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, .06);
+            border-radius: 20px;
+            padding: 22px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .25)
+        }
+
+        .section+.section {
+            margin-top: 18px
+        }
+
+        .item {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 14px;
+            margin: 14px 0;
+            padding: 12px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, .04)
+        }
+
+        .item:hover {
+            border-color: rgba(108, 99, 255, .45)
+        }
+
+        .when {
+            color: var(--muted);
+            font-size: 12px
+        }
+
+        .role {
+            font-weight: 600
+        }
+
+        .org {
+            color: var(--muted)
+        }
+
+        .bullets {
+            margin: 6px 0 0 0;
+            padding-left: 18px
+        }
+
+        .bullets li {
+            margin: 6px 0
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(108, 99, 255, .18);
+            border: 1px solid rgba(108, 99, 255, .35);
+            margin: 6px 6px 0 0;
+            font-size: 12px
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px
+        }
+
+        .btn {
+            padding: 10px 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, .08);
+            text-decoration: none;
+            color: var(--text)
+        }
+
+        .btn.primary {
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            border: none
+        }
+
+        /* Print styles (for Create PDF) */
+        @media print {
+            body {
+                background: #fff;
+                color: #111;
+                padding: 0
+            }
+
+            .hero {
+                box-shadow: none;
+                border: 0;
+                background: #fff
+            }
+
+            .container {
+                max-width: 100%;
+                gap: 16px
+            }
+
+            .card,
+            .section {
+                background: #fff;
+                border: 1px solid #e5e7eb;
+                box-shadow: none
+            }
+
+            .avatar {
+                box-shadow: none;
+                color: #111
+            }
+
+            .btn-row,
+            .print-tip {
+                display: none !important
+            }
+
+            a {
+                color: #111
+            }
+        }
+
+        /* Small screens */
+        @media (max-width: 860px) {
+            .container {
+                grid-template-columns: 1fr
+            }
+
+            .item {
+                grid-template-columns: 1fr
+            }
+
+            .hero {
+                flex-direction: column;
+                align-items: flex-start
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <!-- ✅ Updated Logo -->
+        <div class="avatar">
+            <span class="logo-text">ZA</span>
+        </div>
+        <div class="headline">
+            <h1>Zain Ali — Freelance Web Developer</h1>
+            <p>Building fast, responsive & SEO-friendly websites using modern stacks. Lahore, PK · Available for
+                freelance</p>
+            <div class="btn-row">
+                <a class="btn primary" href="#" onclick="window.print()">Print / Save as PDF</a>
+                <a class="btn" href="mailto:zain@example.com">Email</a>
+                <a class="btn" href="https://wa.me/923001234567" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Left: Sidebar -->
+        <aside>
+            <section class="card">
+                <h2>Contact</h2>
+                <div class="line"></div>
+                <div class="contact">
+                    <a href="mailto:zain@example.com">📧 zain@example.com</a>
+                    <a href="tel:+923001234567">📱 +92 300 1234567</a>
+                    <a href="https://zainali.dev" target="_blank">🌐 zainali.dev</a>
+                    <a href="https://github.com/zainali" target="_blank">🐙 github.com/zainali</a>
+                    <a href="https://www.linkedin.com/in/zainali" target="_blank">🔗 linkedin.com/in/zainali</a>
+                    <a href="https://dribbble.com/zainali" target="_blank">🎯 dribbble.com/zainali</a>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Skills</h2>
+                <div class="line"></div>
+                <div>
+                    <span class="chip">HTML5</span>
+                    <span class="chip">CSS3 / SCSS</span>
+                    <span class="chip">JavaScript (ES6+)</span>
+                    <span class="chip">React</span>
+                    <span class="chip">Next.js</span>
+                    <span class="chip">Tailwind</span>
+                    <span class="chip">Node.js</span>
+                    <span class="chip">Express</span>
+                    <span class="chip">MongoDB</span>
+                    <span class="chip">REST APIs</span>
+                    <span class="chip">Git & GitHub</span>
+                    <span class="chip">Figma</span>
+                    <span class="chip">SEO</span>
+                    <span class="chip">Responsive Design</span>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Strengths</h2>
+                <div class="line"></div>
+                <div>
+                    <div class="chip">Performance-first</div>
+                    <div class="chip">Clean architecture</div>
+                    <div class="chip">Pixel-perfect UI</div>
+                    <div class="chip">Client communication</div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Languages</h2>
+                <div class="line"></div>
+                <div class="chip">English — Professional</div>
+                <div class="chip">Urdu — Native</div>
+            </section>
+
+            <section class="card">
+                <h2>Interests</h2>
+                <div class="line"></div>
+                <div class="chip">UI/UX</div>
+                <div class="chip">Open Source</div>
+                <div class="chip">Automation</div>
+                <div class="chip">Tech Blogging</div>
+            </section>
+        </aside>
+
+        <!-- Right: Main content -->
+        <section>
+            <section class="section">
+                <h2>Profile</h2>
+                <div class="line"></div>
+                <p>
+                    Dedicated Freelance Web Developer with a focus on building responsive, secure and SEO-friendly
+                    websites. I combine clean coding practices with modern tooling to deliver reliable front-end and
+                    full-stack solutions for startups and small businesses.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Experience</h2>
+                <div class="line"></div>
+
+                <div class="item">
+                    <div class="when">2023 — Present</div>
+                    <div>
+                        <div class="role">Freelance Web Developer <span class="org">· Remote</span></div>
+                        <ul class="bullets">
+                            <li>Delivered 15+ responsive business websites using React/Next.js and Tailwind, scoring 90+
+                                on Lighthouse.</li>
+                            <li>Built REST APIs with Node & Express; integrated Stripe payments and JWT auth.</li>
+                            <li>Collaborated with designers in Figma to ship pixel-perfect UIs on tight timelines.</li>
+                        </ul>
+                        <div>
+                            <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="when">2021 — 2023</div>
+                    <div>
+                        <div class="role">Front-End Developer <span class="org">· Web Studio</span></div>
+                        <ul class="bullets">
+                            <li>Created design systems and component libraries to speed up delivery by 30%.</li>
+                            <li>Optimized images, fonts, and bundle size to cut TTI by ~40%.</li>
+                            <li>Migrated legacy jQuery projects to modern stacks.</li>
+                        </ul>
+                        <div>
+                            <span class="tag">Design Systems</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Accessibility</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Featured Projects</h2>
+                <div class="line"></div>
+                <div class="item">
+                    <div class="when">2024</div>
+                    <div>
+                        <div class="role">E-commerce Storefront <span class="org">· MERN</span></div>
+                        <ul class="bullets">
+                            <li>Product listings, cart, checkout, and admin dashboard.</li>
+                            <li>SSR with Next.js for SEO; payments via Stripe; protected routes with JWT.</li>
+                        </ul>
+                        <div>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="when">2023</div>
+                    <div>
+                        <div class="role">Portfolio + Blog <span class="org">· SSG</span></div>
+                        <ul class="bullets">
+                            <li>Markdown blog with tags, search, and RSS; image optimization pipeline.</li>
+                            <li>Deployed on Vercel with CI/CD; 100/100 Lighthouse score.</li>
+                        </ul>
+                        <div>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Vercel</span>
+                            <span class="tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Education</h2>
+                <div class="line"></div>
+                <div class="item">
+                    <div class="when">2018 — 2022</div>
+                    <div>
+                        <div class="role">BS Computer Science <span class="org">· University of Lahore</span></div>
+                        <ul class="bullets">
+                            <li>Final Year Project: AI-assisted code review tool for front-end repos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Certifications</h2>
+                <div class="line"></div>
+                <div class="item">
+                    <div class="when">2024</div>
+                    <div>
+                        <div class="role">Meta Front-End Developer Professional Cert.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="when">2023</div>
+                    <div>
+                        <div class="role">Google Analytics Individual Qualification</div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <p class="print-tip" style="max-width:1000px;margin:18px auto 0;color:var(--muted);text-align:center">
+        Tip: Click <strong>Print / Save as PDF</strong> to export a clean PDF. Colors auto-optimize for printers.
+    </p>
+</body>
+
+</html>

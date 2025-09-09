@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work History</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+
+    .more {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .m1 {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+
+    .m1 h1 {
+      margin: 0;
+      font-size: 2rem;
+      display: inline;
+    }
+
+    .m1 h2 {
+      margin: 0 0 1rem 10px;
+      font-size: 1.8rem;
+      display: inline;
+    }
+
+    .m1 p {
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+
+    .m1 button {
+      margin-right: 10px;
+      padding: 0.5rem 1rem;
+      background: #4a90e2;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .m1 button:hover {
+      background: #357abd;
+    }
+
+    /* Work entries */
+    .work-entry {
+      background: #fff;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: none; /* hide all initially */
+    }
+
+    .work-entry.active {
+      display: block; /* show only active one */
+    }
+
+    .work-entry h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .work-entry h1 {
+      margin: 0.5rem 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .work-entry p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="more">
+    <!-- Section Header -->
+    <div class="m1">
+      <h1>WORKS</h1>
+      <h2>HISTORY</h2>
+      <p>I started my professional journey in 2020 as a Freelance Web Designer, where I created websites and graphics for small businesses.</p>
+      <!-- Buttons to select work entries -->
+      <button onclick="showWork('m2')">2015-2017</button>
+      <button onclick="showWork('m3')">2017-2019</button>
+      <button onclick="showWork('m4')">2020-2022</button>
+    </div>
+
+    <!-- Work entries -->
+    <div class="work-entry m2">
+      <h3>Web Developer</h3>
+      <h1>ZA MAKERS</h1>
+      <p>The company was very satisfied with my work. They appreciated my ability to deliver projects on time and highlighted my strong problem-solving skills.</p>
+    </div>
+
+    <div class="work-entry m3">
+      <h3>Frontend Developer</h3>
+      <h1>ABC TECH</h1>
+      <p>I worked on building responsive websites and interactive UI components. The team praised my design skills and attention to detail.</p>
+    </div>
+
+    <div class="work-entry m4">
+      <h3>Freelance Web Designer</h3>
+      <h1>Self-employed</h1>
+      <p>Designed and developed websites for small businesses, ensuring SEO-friendly and mobile-responsive designs that clients loved.</p>
+    </div>
+  </div>
+
+  <script>
+    function showWork(divClass) {
+      // hide all entries first
+      document.querySelectorAll('.work-entry').forEach(entry => {
+        entry.classList.remove('active');
+      });
+
+      // show only the selected one
+      document.querySelector(`.${divClass}`).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
